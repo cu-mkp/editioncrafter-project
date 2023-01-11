@@ -1,0 +1,26 @@
+{{ define "main" }}
+    <h1 class="page-title">{{ .Title }}</h1>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+    <div id="my-mirador"/> 
+
+    <script type="text/javascript" src="/js/mirador.min.js" ></script>
+
+    <script type="text/javascript">
+        var mirador = Mirador.viewer({
+            "id": "my-mirador",
+            "manifests": {
+                "{{ .Params.manifest_url }}": {
+                "provider": "Harvard University"
+                }
+            },
+            "windows": [
+                {
+                "loadedManifest": "{{ .Params.manifest_url }}",
+                "canvasIndex": 2,
+                "thumbnailNavigationPosition": 'far-bottom'
+                }
+            ]
+        });
+    </script>
+{{ end }}

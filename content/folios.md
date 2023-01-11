@@ -1,8 +1,7 @@
 ---
 title: "Folios"
 draft: false
-menu: "main"
+type: "editionviewer"
+manifest_url: "https://gallica.bnf.fr/iiif/ark:/12148/btv1b10500001g/manifest.json"
 weight: 30
 ---
-
-This is a test.
