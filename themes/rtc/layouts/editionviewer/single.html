@@ -2,13 +2,13 @@
     <h1 class="page-title">{{ .Title }}</h1>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
 
-    <div id="my-mirador"/> 
+    <div id="edition-crafter"/> 
 
     <script type="text/javascript" src="/js/editioncrafter.min.js" ></script>
 
     <script type="text/javascript">
         var ec = EditionCrafter.viewer({
-            "id": "my-mirador",
+            "id": "edition-crafter",
             "manifest": "{{ .Params.manifest_url }}"
         });
     </script>
