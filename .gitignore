@@ -1,6 +1,9 @@
 .DS_Store
 *.xpr
 
+# Static data directory to be refactored
+themes/rtc/static/bnf-ms-fr-640/
+
 # Generated files by hugo
 /public/
 /resources/_gen/
