@@ -4,7 +4,7 @@ menu: "main"
 draft: false
 type: "editioncrafter"
 documentName: "BnF Ms. Fr. 640"
-documentURL: "https://cu-mkp.github.io/editioncrafter-project/fr640_3r-3v-example/iiif/manifest.json"
+documentURL: "https://cu-mkp.github.io/editioncrafter-data/fr640_3r-3v-example/iiif/manifest.json"
 transcriptionTypes:
     tc: 'Diplomatic (FR)'
     tcn: 'Normalized (FR)'
