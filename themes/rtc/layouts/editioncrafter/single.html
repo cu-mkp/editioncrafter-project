@@ -10,9 +10,9 @@
             documentName: '{{ .Params.documentName }}',
             iiifManifest: '{{ .Params.documentURL }}',
             transcriptionTypes: {
-                tc: 'Diplomatic (FR)',
-                tcn: 'Normalized (FR)',
-                tl: 'Translation (EN)',
+                {{ range $layerKey, $layerName := .Params.transcriptionTypes }}
+                    {{ $layerKey }}: '{{ $layerName }}',
+                {{ end }}
             }
         });
     </script>
